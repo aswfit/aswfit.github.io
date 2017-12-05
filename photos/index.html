@@ -266,44 +266,6 @@
 
 
   
-  <div id="SOHUCS" sid="photos" style="padding: 0px 30px 0px 46px;"></div>
-<script type="text/javascript"> 
-(function () {
-    var appid = 'cytlIskWQ';  //你的appid
-    var conf = 'prod_e1a173f0d0fb8afe3c0c8ca61abc1a2b'; //你的CONF
-    var width = window.innerWidth || document.documentElement.clientWidth;
-    if (width < 960) {
-        window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>');
-    } else {
-        var loadJs = function (d, a) {
-            var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
-            var b = document.createElement("script");
-            b.setAttribute("type", "text/javascript");
-            b.setAttribute("charset", "UTF-8");
-            b.setAttribute("src", d);
-            if (typeof a === "function") {
-                if (window.attachEvent) {
-                    b.onreadystatechange = function () {
-                        var e = b.readyState;
-                        if (e === "loaded" || e === "complete") {
-                            b.onreadystatechange = null;
-                            a()
-                        }
-                    }
-                } else {
-                    b.onload = a
-                }
-            }
-            c.appendChild(b)
-        };
-        loadJs("http://changyan.sohu.com/upload/changyan.js", function () {
-            window.changyan.api.config({appid: appid, conf: conf})
-        });
-    }
-})();
-<script>
-
-  
   
   
 
@@ -313,16 +275,35 @@
 <script type="text/javascript">
     window.changyan.api.config({
         appid: "cytlIskWQ",
-        conf: "prod_e1a173f0d0fb8afe3c0c8ca61abc1a2b"
+        conf: "91b2344f960b1dd3d2b3381a146d0f71"
     });
 </script>
 </script>
   
 
   
+    <section >
+      <!--高速版，加载速度快，使用前需测试页面的兼容性-->
+      <div  s></div>
+      <script>
+        (function(){
+          var appid = 'cytcBy09P',
+            conf = '0e827330cbbc63a9d87e7ca4c5ded651';
+          var doc = document,
+            s = doc.createElement('script'),
+            h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+          s.type = 'text/javascript';
+          s.charset = 'utf-8';
+          s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+          h.insertBefore(s,h.firstChild);
+          window.SCS_NO_IFRAME = true;
+        })()
+      </script>
+    </section>
+      
+  <!--  -->
 
   
-
 
           </div>
         </div>
